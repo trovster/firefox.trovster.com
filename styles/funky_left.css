@@ -1,0 +1,6 @@
+@import url(white.css);
+@import url(left.css);
+
+h1 {
+background: #9DC6E9 url(../images/shape2.gif) no-repeat 100% 100%;
+}

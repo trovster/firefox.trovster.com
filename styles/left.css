@@ -1,0 +1,18 @@
+@import url(white.css);
+
+#content, #footer, ul#navigation {
+float: none;
+}
+ul#navigation li {
+float: left;
+}
+h1, p#tagline {
+text-align: left;
+padding-left: 25px;
+}
+#content {
+clear: left;
+}
+#noie a {
+left: 525px;
+}
