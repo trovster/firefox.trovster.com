@@ -10,8 +10,8 @@ Built using PHP.
 
 You can setup the site using [Docker](https://www.docker.com);
 
-    $ git clone https://github.com/trovster/nano.trovster.com.git nano
-    $ cd nano
+    $ git clone https://github.com/trovster/firefox.trovster.com.git firefox
+    $ cd firefox
     $ npm install
     $ npm run start -- --build
 
