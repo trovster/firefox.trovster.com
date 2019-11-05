@@ -1,0 +1,58 @@
+@import url(white.css);
+
+body {
+font-family: "Times New Roman", Times, serif;
+font-size: 100%;
+margin-top: 20px;
+width: 100%;
+}
+
+h1, p#tagline {
+font-family: Helvetica, sans-serif;
+text-align: left;
+margin: 0;
+padding: 0;
+padding-left: 20px;
+}
+h1 {
+background: #fff url(../images/firefox_print.png) no-repeat 100% 0;
+padding-bottom: 80px;
+}
+p#tagline {
+margin-top: -80px
+}
+h2 {
+margin: 5px 0;
+width: 90%;
+border-bottom: 3px solid #405A5A;
+}
+dl dd {
+margin-top: -1em;
+}
+#content, dl dt {
+float: none;
+}
+
+ul#navigation, #footer {
+display: none;
+}
+
+a, a:hover {
+border: 0;
+}
+a[href^="http://"] {
+background-image: none;
+}
+a[href^="http://"]:after {
+content: " [" attr(href) "]";
+}
+.info {
+border: 0;
+}
+.info:after {
+content: " [" attr(title) "]";
+text-transform: lowercase;
+}
+dl dt:after {
+content: "";
+}

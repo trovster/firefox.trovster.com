@@ -1,0 +1,183 @@
+body, html {
+background-color: #fff;
+}
+body {
+font-size: 90%;
+font-family: Helvetica, sans-serif;
+/*
+min-width: 42em;
+*/
+line-height: 1.5em;
+} 
+
+* {
+border: 0;
+margin: 0;
+padding: 0;
+}
+.hidden {
+display: none;
+}
+
+p {
+text-align: justify;
+margin: 1em 0;
+}
+a {
+text-decoration: none;
+color: #DD5300;
+border-bottom: 2px solid #405A5A;
+}
+a:visited, a:focus {
+border-bottom: 1px solid #405A5A;
+padding: 0;
+color: #F29B66;
+}
+a:hover {
+border-bottom: 3px solid #405A5A;
+}
+a[href^="http://"] {
+padding-right: 10px;
+margin-right: 5px;
+background: transparent url(../images/outside_link.gif) no-repeat 100% 50%;
+}
+#footer a {
+background-image: none;
+padding-right: 0;
+border: 0;
+}
+
+h1, p#tagline {
+text-align: right;
+padding-right: 25px;
+}
+h1 {
+padding-top: 150px;
+padding-bottom: 62px;
+}
+h2,h3 {
+color: #405A5A;
+}
+h3 {
+margin-top: 2em;
+}
+h2 + h3 {
+margin-top: 1em;
+}
+h3:target {
+text-decoration: underline;
+}
+h1 a, h1 a:hover, h1 a:visited {
+font-size: 2em;
+text-decoration: none;
+border: 0;
+color: #DD5300;
+}
+p#tagline {
+color: #405A5A;
+font-size: 2em;
+text-transform: lowercase;
+font-weight: bold;
+margin: 0;
+margin-top: -58px;
+}
+* html p#tagline {
+margin-top: -50px;
+}
+acronym, abbr {
+border-bottom: 1px dashed #405A5A;
+cursor: help;
+}
+
+ul#navigation {
+float: right;
+list-style-type: none;
+margin: 10px 0 0;
+}
+ul#navigation li {
+float: right;
+}
+ul#navigation li a {
+display: block;
+padding: 0 30px 5px;
+color: #405A5A;
+text-decoration: none;
+border-bottom: 3px solid #fff;
+}
+ul#navigation li a:hover, ul#navigation li#active a {
+border-bottom: 3px solid #405A5A;
+}
+
+#content, #footer {
+width: 41em;
+padding: 10px 20px;
+}
+#content {
+float: right;
+margin-top: -3px;
+}
+#footer {
+clear: right;
+float: right;
+margin-bottom: 10px;
+}
+#footer p {
+text-align: center;
+}
+
+dl dt {
+clear: left;
+float: left;
+margin-right: 5px;
+}
+dl dt:after {
+content: "-";
+}
+dl dt {
+margin: 0 5px 0 0;
+}
+dl dd {
+margin-bottom: 1em;
+}
+dl dd p {
+margin: 0;
+}
+blockquote p:before, blockquote p:after {
+content: "\""
+}
+
+code {
+background-color: #eee;
+font-size: 100%;
+}
+.info {
+cursor: help;
+border-bottom: 1px dashed #405A5A;
+}
+
+#download {
+/* Mozilla Colour - background-color: #C4EFA1 */
+background-color: #E4ECEC;
+-moz-border-radius: 10px;
+padding: 10px;
+}
+#download * {
+margin: 0;
+}
+#download ul {
+list-style: none;
+}
+
+
+#noie a {
+position: absolute;
+top: 140px;
+right: 525px;
+display: block;
+background: transparent url(../images/noie.gif) no-repeat 50% 0;
+padding: 40px 0 0 0;
+width: 100px;
+border: 0;
+color: #000;
+text-align: center;
+}
