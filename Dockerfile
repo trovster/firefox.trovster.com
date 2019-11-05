@@ -1,4 +1,4 @@
-FROM php:5.6-apache as trovster_nano
+FROM php:5.6-apache as trovster_firefox
 
 RUN a2enmod rewrite
 
