@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    website:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: trovster_firefox:latest
+        container_name: trovster_firefox
+        ports:
+            - "8002:80"
+        volumes:
+            - ./:/var/www/html

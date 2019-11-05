@@ -1,7 +1,7 @@
 <?php
 if(isset($_GET['section']))
 {
-	$section = $_GET['section'];
+	$section = rtrim($_GET['section'], '/');
 	$section_output = ucwords(str_replace('-',' ',$section));
 	$title = $section_output.' | ';
 }
@@ -41,20 +41,20 @@ echo '<meta name="robots" content="index,follow" />'."\n";
 <base href="/" />
 
 <!-- link stylesheets-->
-<link rel="stylesheet" type="text/css" href="styles/white.css" media="screen" title="All White" />
-<link rel="stylesheet" type="text/css" href="styles/print.css" media="print" />
-<link rel="stylesheet" type="text/css" href="styles/handheld.css" media="handheld" />
+<link rel="stylesheet" type="text/css" href="/styles/white.css" media="screen" title="All White" />
+<link rel="stylesheet" type="text/css" href="/styles/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/styles/handheld.css" media="handheld" />
 
 <!-- alternative stylesheets -->
-<link rel="alternate stylesheet" type="text/css" href="styles/funky.css" media="screen" title="Funky Blue" />
-<link rel="alternate stylesheet" type="text/css" href="styles/left.css" media="screen" title="You've Left Me!" />
-<link rel="alternate stylesheet" type="text/css" href="styles/funky_left.css" media="screen" title="You've Left Me Funky Blue!" />
+<link rel="alternate stylesheet" type="text/css" href="/styles/funky.css" media="screen" title="Funky Blue" />
+<link rel="alternate stylesheet" type="text/css" href="/styles/left.css" media="screen" title="You've Left Me!" />
+<link rel="alternate stylesheet" type="text/css" href="/styles/funky_left.css" media="screen" title="You've Left Me Funky Blue!" />
 
 <!-- javascript, pesky javascript -->
 
 
 <!-- icon! copyright Mozilla Organisation -->
-<link rel="icon" href="images/firefox_icon.png" type="image/png" />
+<link rel="icon" href="/images/firefox_icon.png" type="image/png" />
 
 </head>
 
@@ -65,7 +65,7 @@ echo '<meta name="robots" content="index,follow" />'."\n";
 <li><a href="#" title="Skip straight to the footer information on this page">Skip To Footer</a></li>
 </ul>
 
-<h1><a href="./" title="Lost? This'll take you back to the homepage!">Firefox</a></h1>
+<h1><a href="/" title="Lost? This'll take you back to the homepage!">Firefox</a></h1>
 
 <p id="tagline">Rediscover The Web</p>
 
@@ -74,10 +74,10 @@ echo '<meta name="robots" content="index,follow" />'."\n";
 <![endif]-->
 
 <ul id="navigation">
-<li<?php if($section=='about'){echo ' id="active"';}?>><a href="about/" title="Information about the Mozilla Firefox web browser." tabindex="2">About</a></li>
-<li<?php if($section=='why'){echo ' id="active"';}?>><a href="why/" title="Reasons why you should use the Firefox, especially instead of Microsoft Internet Explorer." tabindex="3">Why?</a></li>
-<li<?php if($section=='customise'){echo ' id="active"';}?>><a href="customise/" title="My recommendations of numerous different Firefox extensions that complement and extend the browser to personal requirements." tabindex="4">Customise</a></li>
-<li<?php if($section=='links'){echo ' id="active"';}?>><a href="links/" title="Explore the whole Firefox community." tabindex="5">Links</a></li>
+<li<?php if($section=='about'){echo ' id="active"';}?>><a href="/about/" title="Information about the Mozilla Firefox web browser." tabindex="2">About</a></li>
+<li<?php if($section=='why'){echo ' id="active"';}?>><a href="/why/" title="Reasons why you should use the Firefox, especially instead of Microsoft Internet Explorer." tabindex="3">Why?</a></li>
+<li<?php if($section=='customise'){echo ' id="active"';}?>><a href="/customise/" title="My recommendations of numerous different Firefox extensions that complement and extend the browser to personal requirements." tabindex="4">Customise</a></li>
+<li<?php if($section=='links'){echo ' id="active"';}?>><a href="/links/" title="Explore the whole Firefox community." tabindex="5">Links</a></li>
 </ul>
 
 <div id="content">
