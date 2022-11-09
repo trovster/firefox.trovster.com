@@ -1,30 +1,17 @@
-<?php
-require_once('header.php');
+<?php require_once('header.php');
 
-if($section=='homepage')
-{
+if ($section === 'homepage') {
 	require_once('pages/index.php');
-}
-elseif($section=='about')
-{
+} elseif ($section === 'about') {
 	require_once('pages/about.php');
-}
-elseif($section=='why')
-{
+} elseif ($section === 'why') {
 	require_once('pages/why.php');
-}
-elseif($section=='customise')
-{
+} elseif ($section === 'customise') {
 	require_once('pages/customise.php');
-}
-elseif($section=='links')
-{
+} elseif ($section === 'links') {
 	require_once('pages/links.php');
-}
-else
-{
+} else {
 	echo '<p>Oops, 404!</p>';
 }
 
 require_once('footer.php');
-?>

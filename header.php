@@ -1,15 +1,15 @@
-<?php
-if(isset($_GET['section']))
-{
+<?php error_reporting(0);
+
+if (isset($_GET['section'])) {
 	$section = rtrim($_GET['section'], '/');
 	$section_output = ucwords(str_replace('-',' ',$section));
 	$title = $section_output.' | ';
 }
-else
-{
+else {
 	$section = 'homepage';
 	$title = '';
 }
+
 $title .= 'Firefox: Rediscover The Web';
 
 $filler = '<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec risus. Aliquam eleifend lorem ut turpis.
@@ -31,7 +31,7 @@ echo '<meta http-equiv="content-language" content="en-uk" />'."\n\n";
 
 echo '<!-- meta name -->'."\n";
 echo '<meta name="author" content="Trovster [Trevor Morris]" />'."\n";
-echo '<meta name="copyright" content="Trevor Morris '.date('Y',time('NOW')).'" />'."\n";
+echo '<meta name="copyright" content="Trevor Morris '.date('Y').'" />'."\n";
 echo '<meta name="keywords" content="Firefox, extensions" />'."\n";
 echo '<meta name="description" content="Firefox and other alternatives to Internet Explorer for more secure and efficient web browsing." />'."\n";
 echo '<meta name="robots" content="index,follow" />'."\n";
