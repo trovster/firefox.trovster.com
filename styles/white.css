@@ -8,7 +8,7 @@ font-family: Helvetica, sans-serif;
 min-width: 42em;
 */
 line-height: 1.5em;
-} 
+}
 
 * {
 border: 0;
@@ -113,7 +113,7 @@ width: 41em;
 padding: 10px 20px;
 }
 #content {
-float: right;
+float: right; clear: right;
 margin-top: -3px;
 }
 #footer {
