@@ -8,6 +8,13 @@ services:
         image: trovster_firefox:latest
         container_name: trovster_firefox
         ports:
-            - "8002:80"
+            - '${FORWARD_APP_PORT:-80}:80'
         volumes:
             - ./:/var/www/html
+        networks:
+            - trovster_firefox
+
+networks:
+    trovster_firefox:
+        driver: bridge
+
